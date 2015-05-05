@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tomatoes</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="controls">
+      <label>Enter movie title</label><input id="titleSearch" type="text" />
+      <button class="search-button">Search</button>
+    </div>
+    <div class="movie-list"></div>
+  </div>
+
+
+  <script id="movieTemplate" type="text/template">
+    <img src="<%= posterImage %>"/>
+    <ul>
+      <li><label>Title: </label><%= title %></li>
+      <li><label>RT critics rating: </label><%= rating %></li>
+      <li><label>Metascore rating: </label><%= metaRating %></li>
+      <li><label>Release year: </label><%= year %></li>
+      <li><label>Plot: </label> <p> <%= summary %></p></li>
+    </ul>
+  </script>
+
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/underscore-min.js"></script>
+  <script src="js/lib/backbone-min.js"></script>
+  <script src="js/models/Movie.js"></script>
+  <script src="js/collections/Movies.js"></script>
+  <script src="js/views/MovieView.js"></script>
+  <script src="js/views/MoviesView.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.main {
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
+}
+
+.controls {
+  display: inline-block;
+}
+
+.movieContainer img {
+  float: left;
+  margin: 3px 10px;
+  width: 100px;
+}
+
+.movieContainer li label {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.movieContainer li p {
+  font-size: 12px;
+  margin: 0 0 0 120px;
+}
+
+.movieContainer ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#titleSearch {
+  margin-left: 5px;
+}
+
+.clearfix:after {
+  clear: both;
+  content: '.';
+  display: block;
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+}
